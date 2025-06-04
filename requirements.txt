@@ -1,0 +1,10 @@
+discord.py
+yt-dlp
+spotipy
+youtube-search
+ffmpeg-python
+asyncio
+ffmpeg
+dotenv
+python-dotenv
+PyNaCl
