@@ -406,7 +406,7 @@ async def delete(ctx, id: int):
 
 
 @bot.command(name='negro',help='Tagui beggar many times')
-async def negro(ctx,times : int):
+async def negro(ctx,times : int,message : str):
     if times > 10:
         await ctx.send("You can't tagui beggar more than 10 times")
         await ctx.send("Wech l7aj mahoch 7a yhrb negro")
@@ -415,7 +415,7 @@ async def negro(ctx,times : int):
     Beggar = await bot.fetch_user(BeggarId)
     async def Sending(num : int):
         for i in range(num):
-            await ctx.send(Beggar.mention)
+            await ctx.send(Beggar.mention + ' ' + message)
     await Sending(times)
 
 @bot.command(name='aoko',help='Tagui aoko many times')
